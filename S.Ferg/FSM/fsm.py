@@ -85,7 +85,7 @@ def handleEndOfInput():
 # Create an eventStream so we can demo the application
 
 eventStream = "Suzy Smith loves John Jones"
-state = START # initialize the state-machine in the START state
+state = START # initialize the state-machine in the START state.
 
 while True: # do forever: this is the event loop
     c = next(getchar) # en python3 # c = getchar.next() # get the character (event)
