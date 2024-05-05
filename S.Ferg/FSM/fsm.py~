@@ -1,0 +1,15 @@
+#------------------------------------------------
+# the driver routine, the event loop
+#------------------------------------------------
+# Create an eventStream so we can demo the application
+eventStream = "Suzy Smith loves John Jones"
+state = START # initialize the state-machine in the START state
+while True: # do forever: this is the event loop
+c = getchar.next() # get the character (event)
+if c == None: # indicates end of the event stream
+handleEndOfInput()
+break # break out of the event loop
+elif c == " ":
+handleSpace(c)
+else: # a "letter" is any non-space character
+handleLetter(c)
